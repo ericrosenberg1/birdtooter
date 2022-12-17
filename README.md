@@ -12,11 +12,11 @@ If you know how to download and run a simple Python app using the command line a
 ## Installation and setup
 1. Use Git Clone or download the .zip version of the app from Github. If you download the .zip version, extract to the directory where you want to host the app. Before cloning, navigate to the directory you want to use with the cd command.
 
-    $ git clone https://github.com/ericrosenberg1/birdtooter
+    '''$ git clone https://github.com/ericrosenberg1/birdtooter'''
 
 2. Install tweepy, Mastodon.py, and squlite3.
 
-    pip install tweepy mastodon.py sqlite3
+    '''pip install tweepy mastodon.py sqlite3'''
 
 3. Prepare the constants.py file
 
@@ -29,7 +29,7 @@ If you know how to download and run a simple Python app using the command line a
 
 Use cd to navigate to the directory where you downloaded and run birdtoot.py.
 
-  $ Python3 birdtoot.py
+'''$ Python3 birdtoot.py'''
   
 If everything is working, you should see a success message. If there are any failures, you may need to troubleshoot. Common issues are not using the wrong Python version, not having the correct dependencies installed, using the wrong API credentials or version, or attempting to run the file from the wrong directory.
 
@@ -41,12 +41,12 @@ I set this up using crontab in the default command line editor, but you can use 
 
 From the command line, enter:
 
-  $ crontab -e
+'''$ crontab -e'''
     
 Add this line to the bottom of your CRON jobs section. Update the bold text with your installation directory.
 
-  #TwitterToMastodonBot
-  */5 * * * * python3 **/home/username/code**/birdtooter/birdtoot.py
+'''#TwitterToMastodonBot
+*/5 * * * * python3 **/home/username/code**/birdtooter/birdtoot.py'''
 
 Wait five minutes. If there are new Tweets, they should automatically copy to your linked Mastodon account. That's it! You're up and running.
 
