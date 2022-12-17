@@ -1,5 +1,5 @@
 # Birdtooter
-A simple Python app to copy new tweets from a specified Twitter user to a single Mastodon account. Created by @ericrosenberg1 to automate posting from @venturacitynews on Twitter to venturacitynews@mas.to on Mastodon. You can update to copy any Twitter account to Mastodon for your 10 latest tweets with no duplicates.
+A simple Python app to copy new tweets from a specified Twitter user to a single Mastodon account. Created by @ericrosenberg1 to automate posting from [@VenturaCityNews](https://twitter.com/venturacitynews) on Twitter to [venturacitynews@mas.to](https://venturacitynews@mas.to/@VenturaCityNews) on Mastodon. You can update to copy any Twitter account to Mastodon for your 10 latest tweets with no duplicates.
 
 ## How it works
 Birtdtooter uses the Twitter API and Mastodon API to find new tweets and add them to Mastodon. Tweets IDs are stored using a SQLite database to prevent duplicates. The Python3 app requires tweepy, Mastodon.py, and sqlite3.
