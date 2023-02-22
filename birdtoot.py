@@ -16,7 +16,7 @@ MASTODON_ACCESS_TOKEN = constants.mastodon_access_token
 MASTODON_BASE_URL = constants.mastodon_base_url
 
 # Authenticate with the Twitter API
-auth = tweepy.OAuth1UserHandler(TWITTER_CONSUMER_KEY, TWITTER_CONSUMER_SECRET, TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_TOKEN_SECRET)
+auth = tweepy.OAuthHandler(TWITTER_CONSUMER_KEY, TWITTER_CONSUMER_SECRET, TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth)
 
 # Authenticate with the Mastodon API
